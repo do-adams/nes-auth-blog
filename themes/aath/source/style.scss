@@ -1,0 +1,69 @@
+$hover-color: #007fff;
+$transition: .3s color;
+$box-shadow: 0 2px 5px -2px rgba(0,0,0,.05);
+$breakpoint-desktop: 1032px;
+$breakpoint-phone: 700px;
+
+@mixin basic {
+  max-width: 1000px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+@mixin table-view {
+  width: 100%;
+}
+
+@mixin aside {
+  margin-left: 15px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  position: sticky;
+  top: 15px;
+  align-self: flex-start;
+}
+
+@mixin left-container {
+  width: 66%;
+  background-color: #ffffff;
+  border-radius: 2px;
+  box-shadow: $box-shadow;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #f4f5f5;
+}
+
+body {
+  font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f4f5f5;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #909090;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  @include basic;
+}
+
+@import 'css/_partical/categories';
+@import 'css/_partical/footer';
+@import 'css/_partical/header';
+@import 'css/_partical/tag';
+
+@import 'css/_archive';
+@import 'css/_about';
+@import 'css/_post';
+@import 'css/_index';
+@import 'css/_tags';

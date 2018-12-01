@@ -1,0 +1,48 @@
+header {
+  background: #fff;
+  border-bottom: 1px solid #f1f1f1;
+  color: #909090;
+  margin-bottom: 15px;
+  box-shadow: $box-shadow;
+  .header-container {
+    @include basic;
+    display: flex;
+    font-size: 1.15em;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    .logo {
+      color: $hover-color;
+    }
+    .right-header {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        display: inline-block;
+        padding: 0 18px;
+        &:last-child {
+          padding-right: 25px;
+        }
+      }
+      .nav-item {
+        .active {
+          color: $hover-color;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-phone) {
+  header {
+    .right-header {
+      li.nav-item {
+        padding: 0 0 0 5px;
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
