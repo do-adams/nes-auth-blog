@@ -34,6 +34,7 @@ app.use(authRoutes.routes());
 
 const checkAuth = require('./middleware/checkAuth');
 const serve = compose([
+	koaStatic('server/assets'),
 	checkAuth, 
 	koaStatic('public', {
 		index: 'index.html'
