@@ -9,6 +9,7 @@
     "start": "hexo generate && node server/server.js"
   },
   "dependencies": {
+    "dotenv": "^6.1.0",
     "hexo": "^3.7.0",
     "hexo-cli": "^1.1.0",
     "hexo-generator-archive": "^0.1.5",

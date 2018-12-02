@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 'use strict';
 
 const path = require('path');
@@ -12,7 +14,7 @@ const bodyParser = require('koa-bodyparser');
 const session = require('koa-session');
 const koaStatic = require('koa-static');
 
-app.keys = ['secret cookie'];
+app.keys = [process.env.SESSION_SECRET || 'development debug key'];
 
 app.use(views(path.join(__dirname, 'views')));
 app.use(bodyParser());

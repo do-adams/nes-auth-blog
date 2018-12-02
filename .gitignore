@@ -6,5 +6,8 @@ node_modules/
 public/
 .deploy*/
 
+.vscode/*
+.env
+
 source/_posts/*
 server/users.json
