@@ -7,3 +7,4 @@ public/
 .deploy*/
 
 source/_posts/*
+server/users.json
