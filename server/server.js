@@ -1,6 +1,6 @@
-require('dotenv').config();
-
 'use strict';
+
+require('dotenv').config();
 
 const path = require('path');
 
@@ -30,11 +30,11 @@ const handle404 = require('./middleware/handle404');
 app.use(handle404);
 
 const authRoutes = require('./routes/auth');
-app.use(authRoutes.routes());
-
 const checkAuth = require('./middleware/checkAuth');
+
 const serve = compose([
 	koaStatic('server/assets'),
+	authRoutes.routes(),
 	checkAuth, 
 	koaStatic('public', {
 		index: 'index.html'
