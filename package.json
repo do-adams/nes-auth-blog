@@ -5,9 +5,12 @@
   "hexo": {
     "version": "3.8.0"
   },
+  "main": "server/server.js",
   "scripts": {
     "start": "hexo clean && hexo generate && node server/server.js"
   },
+  "author": "Damián Adams",
+  "license": "MIT",
   "dependencies": {
     "dotenv": "^6.1.0",
     "hexo": "^3.7.0",
