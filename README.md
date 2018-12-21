@@ -4,11 +4,13 @@
 
 A static blog with fun Nintendo-themed user authentication built with [Hexo](https://hexo.io/), [Koa](https://github.com/koajs/koa), and [NESS.css](https://github.com/nostalgic-css/NES.css).
 
+### About
+
 nes-auth-blog uses Hexo with a customized [aath](https://github.com/lewis-geek/hexo-theme-Aath) theme to render your markdown files into a static blog. It then runs a lightning-fast Koa server with static user authentication to serve the blog.
 
-It is intended as a private blog for sharing internal or personal documentation across a small group of selected developers via Markdown as the preferred storage medium, which is already very popular with developers.
+It is intended as a private blog for sharing internal or personal documentation across a small group of people via Markdown as the preferred storage medium, which is already very popular with developers and simple to use and write with.
 
-It leverages the use of Git for keeping track of changes in authorship of blog posts and publications and for easy deployment. 
+It leverages the use of Git for keeping track of changes in authorship of blog posts and publications, and for easy deployment. 
 
 ### Setup
 
@@ -20,7 +22,7 @@ It leverages the use of Git for keeping track of changes in authorship of blog p
 
 To run an instance of nes-auth-blog simply run the `npm install` and `npm start` commands in the root of the repository directory and open a browser window to `http://localhost:3000/`.
 
-The default credentials to access the blog are username `admin` and password `root`.
+The default credentials to access the blog are username `admin` and password `root`. **Please remember to remove the default credentials before deploying**.
 
 ### Configuration
 
