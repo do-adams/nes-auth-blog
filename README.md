@@ -4,6 +4,8 @@
 
 A static blog with fun Nintendo-themed user authentication built with [Hexo](https://hexo.io/), [Koa](https://github.com/koajs/koa), and [NESS.css](https://github.com/nostalgic-css/NES.css). It is generated and powered by Node.js.
 
+You can view a live demo [here](https://nes-auth-blog.herokuapp.com/). Use the username `admin` and password `root`to log in and view the blog.
+
 ### About
 
 nes-auth-blog uses Hexo with a customized [aath](https://github.com/lewis-geek/hexo-theme-Aath) theme to render your markdown files into a static blog. It then runs a lightning-fast Koa server with static user authentication to serve the blog.
