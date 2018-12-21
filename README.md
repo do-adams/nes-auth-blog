@@ -2,7 +2,7 @@
 
 ![nes-auth-blog showcase](server/assets/img/nes-catalog-showcase.gif "nes-auth-blog showcase")
 
-A static blog with fun Nintendo-themed user authentication built with [Hexo](https://hexo.io/), [Koa](https://github.com/koajs/koa), and [NESS.css](https://github.com/nostalgic-css/NES.css), generated and powered by Node.js.
+A static blog with fun Nintendo-themed user authentication built with [Hexo](https://hexo.io/), [Koa](https://github.com/koajs/koa), and [NESS.css](https://github.com/nostalgic-css/NES.css). It is generated and powered by Node.js.
 
 ### About
 
@@ -22,7 +22,7 @@ It leverages the use of Git for keeping track of changes in authorship of blog p
 
 To run an instance of nes-auth-blog simply run the `npm install` and `npm start` commands in the root of the repository directory and open a browser window to `http://localhost:3000/`.
 
-The default credentials to access the blog are username `admin` and password `root`. **Please remember to remove the default credentials before deploying**.
+The default credentials to access the blog are username `admin` and password `root`. **Please remember to remove the default credentials before deploying to secure your blog**.
 
 ### Configuration
 
