@@ -16,7 +16,7 @@ It leverages the use of Git for keeping track of changes in authorship of blog p
 
 1. Clone the repo.
 2. Create, edit, and place your markdown `.md` files (blog posts) in the `source/_posts` directory.
-3. Add your authorized users to the array in the `server/users.json` file in the `{ "name": "user", "password": "pword" }` format.
+3. Add your authorized users to the array in the `server/users.json` file as a `{ "name": "user", "password": "pword" }` object.
 
 ### Running
 
