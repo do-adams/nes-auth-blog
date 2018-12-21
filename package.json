@@ -6,7 +6,7 @@
     "version": "3.8.0"
   },
   "scripts": {
-    "start": "hexo generate && node server/server.js"
+    "start": "hexo clean && hexo generate && node server/server.js"
   },
   "dependencies": {
     "dotenv": "^6.1.0",
