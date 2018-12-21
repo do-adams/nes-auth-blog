@@ -26,11 +26,13 @@ The default credentials to access the blog are username `admin` and password `ro
 
 ### Configuration
 
+To configure your blog title and other information, open and [edit](https://hexo.io/docs/configuration) your `_config.yml` file.
+
+For more Hexo-specific configuration please refer to the Hexo [documentation](https://hexo.io/docs/).
+
 You can configure two environment variables at deployment time or at development time with [dotenv](https://github.com/motdotla/dotenv):
 * `SESSION_SECRET` - the key used to encrypt and store the session cookie on the client-side
 * `PORT` - the port number for the server
-
-For Hexo-specific configuration please refer to the Hexo documentation.
 
 You are encouraged to make this project your own by customizing the server authentication styles under `server` with a framework like [PSone.css](https://github.com/98mprice/PSone.css) and with a [different](https://hexo.io/themes/) Hexo theme.
 
