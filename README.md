@@ -8,7 +8,7 @@ A static blog with fun Nintendo-themed user authentication built with [Hexo](htt
 
 nes-auth-blog uses Hexo with a customized [aath](https://github.com/lewis-geek/hexo-theme-Aath) theme to render your markdown files into a static blog. It then runs a lightning-fast Koa server with static user authentication to serve the blog.
 
-It is intended as a private blog for sharing internal or personal documentation across a small group of people via Markdown as the preferred storage medium, which is already very popular with developers and simple to use and write with.
+It is intended as a private, simple, lightweight, and zero-configuration blog for sharing internal or personal documentation across a small group of people via Markdown - beloved by developers the world over - as the preferred writing medium.
 
 It leverages the use of Git for keeping track of changes in authorship of blog posts and publications, and for easy deployment. 
 
@@ -30,7 +30,9 @@ You can configure two environment variables at deployment time or at development
 * `SESSION_SECRET` - the key used to encrypt and store the session cookie on the client-side
 * `PORT` - the port number for the server
 
-To use and configure your own or another theme, please view the Hexo documentation.
+For Hexo-specific configuration please refer to the Hexo documentation.
+
+You are encouraged to make this project your own by customizing the server authentication styles under `server` with a framework like [PSone.css](https://github.com/98mprice/PSone.css) and with a [different](https://hexo.io/themes/) Hexo theme.
 
 ### Image Credits
 
