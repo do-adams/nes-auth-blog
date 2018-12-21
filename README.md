@@ -2,7 +2,7 @@
 
 ![nes-auth-blog showcase](server/assets/img/nes-catalog-showcase.gif "nes-auth-blog showcase")
 
-A static blog with fun Nintendo-themed user authentication built with [Hexo](https://hexo.io/), [Koa](https://github.com/koajs/koa), and [NESS.css](https://github.com/nostalgic-css/NES.css).
+A static blog with fun Nintendo-themed user authentication built with [Hexo](https://hexo.io/), [Koa](https://github.com/koajs/koa), and [NESS.css](https://github.com/nostalgic-css/NES.css), generated and powered by Node.js.
 
 ### About
 
