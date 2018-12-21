@@ -8,7 +8,7 @@
 		<link href="/css/nes.min.css" rel="stylesheet" />
 		<style>
 			body {
-				height: 100vh;
+				min-height: 100vh;
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
@@ -19,10 +19,21 @@
 				background-position: center;
 				background-size: cover;
 			}
+
+			main {
+				padding: 1em;
+				text-align: center;
+			}
+
+			h1 {
+				margin-bottom: 2em;
+			}
 		</style>
 	</head>
 	<body>
-		<h1>404 Error: Page Not Found</h1>
-		<a href="/">Go back home</a>
+		<main>
+				<h1>404 Error: Page Not Found</h1>
+				<a href="/">Go back home</a>
+		</main>
 	</body>
 </html>

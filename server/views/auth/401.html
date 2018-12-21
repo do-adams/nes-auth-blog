@@ -8,7 +8,8 @@
 		<link href="/css/nes.min.css" rel="stylesheet" />
 		<style>
 			body {
-				height: 100vh;
+				min-height: 100vh;
+
 				display: flex;
 				flex-direction: column;
 				align-items: center;
@@ -18,14 +19,25 @@
 				background-color: black;
 			}
 
+			main {
+				padding: 1em;
+				text-align: center;
+			}
+
 			h1 {
 				margin-bottom: 2em;
+			}
+
+			h2 {
+				margin-bottom: 1em;
 			}
 		</style>
 	</head>
 	<body>
-		<h1>Game Over</h1> 
-		<h2>Your credentials are invalid.</h2>
-		<p>Please try <a href="/auth/login">again</a></p>
+		<main>
+				<h1>Game Over</h1> 
+				<h2>Your credentials are invalid.</h2>
+				<p>Please try <a href="/auth/login">again</a></p>
+		</main>
 	</body>
 </html>
