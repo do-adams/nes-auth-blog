@@ -7,14 +7,18 @@ const path = require('path');
 const Koa = require('koa');
 const app = new Koa();
 
-const compose = require('koa-compose');
+const helmet = require('koa-helmet');
 
 const views = require('koa-views');
 const bodyParser = require('koa-bodyparser');
 const session = require('koa-session');
 const koaStatic = require('koa-static');
 
+const compose = require('koa-compose');
+
 app.keys = [process.env.SESSION_SECRET || 'development debug key'];
+
+app.use(helmet());
 
 app.use(views(path.join(__dirname, 'views')));
 app.use(bodyParser());
@@ -27,6 +31,7 @@ app.use(session({
 }, app));
 
 const handle404 = require('./middleware/handle404');
+
 app.use(handle404);
 
 const authRoutes = require('./routes/auth');
@@ -40,6 +45,7 @@ const serve = compose([
 		index: 'index.html'
 	})
 ]);
+
 app.use(serve);
 
 const port = process.env.PORT || 3000;
