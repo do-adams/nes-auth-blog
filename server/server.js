@@ -18,8 +18,11 @@ const compose = require('koa-compose');
 
 app.keys = [process.env.SESSION_SECRET || 'development debug key'];
 
-app.use(helmet());
+const errorHandler = require('./middleware/errorHandler');
 
+app.use(errorHandler);
+
+app.use(helmet());
 app.use(views(path.join(__dirname, 'views')));
 app.use(bodyParser());
 app.use(session({
@@ -29,10 +32,6 @@ app.use(session({
 	rolling: false,
 	renew: false,
 }, app));
-
-const handle404 = require('./middleware/handle404');
-
-app.use(handle404);
 
 const authRoutes = require('./routes/auth');
 const checkAuth = require('./middleware/checkAuth');

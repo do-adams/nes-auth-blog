@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = async function handle404(ctx, next) {
+module.exports = async function errorHandler(ctx, next) {
 	try {
 		await next();
 		const status = ctx.status || 404;
